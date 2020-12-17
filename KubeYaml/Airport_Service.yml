@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: airports-assembly-service
+  labels:
+    app: airports-assembly-service
+spec:
+  ports:
+  - port: 8001
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: airports-assembly
