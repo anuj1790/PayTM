@@ -3,9 +3,12 @@
 
 To setup this on local will need below 
 
-1.Jenkins. (docker pluing also needed)
-2 Docker for windows with kubernetes enabled.
+1. Jenkins. (docker pluing also needed)
+
+2. Docker for windows with kubernetes enabled.
+
 3. Use Jenkinsfile to configure build pipeline for docker images. (output can be seen in Jenkin_Build_Out.md file)
+
 4. Changes for jenkins pipeline can be seen in image (pipeline_change.jpg)
 
 Clone Git Repo
