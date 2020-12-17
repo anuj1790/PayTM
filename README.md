@@ -1,13 +1,16 @@
 # PayTM
 
-Initialize Jenkins with below command (make sure you update you Home location for local mount where ever you clone repo)
 
-docker run -d --name myjenkins -p 8181:8080 -p 50000:50000 -v C:/Users/anujaga/Assignment/Jenkins:/var/jenkins_home jenkins/jenkins:latest
+To setup this on local will need below 
 
-Things to now after running above coomand.
-1. Jenkins can be accessed on local with http://localhost:8181
-2. create you own git hub repo cred
-3. Update git hub repo in Jenkinsfile
-4. you will be getting pre-defined pipeline to initail entire stack of application (Airport and Countries)
-5. Once pipeline is executed you can browse on http://localhost:30080/countries or http://localhost:30080/airports
+1.Jenkins. (docker pluing also needed)
+2 Docker for windows with kubernetes enabled.
+3. Use Jenkinsfile to configure build pipeline for docker images.
 
+Clone Git Repo
+
+git clone 
+
+To initialze application over kubenetes run below command.
+
+kubectl apply -f KubeYaml/ns-sa.yml;kubectl apply -f KubeYaml/ingress-secrets.yml;kubectl apply -f KubeYaml/ingress-role.yml;kubectl apply -f KubeYaml/ingress-config.yml;kubectl apply -f KubeYaml/ingress-class.yml;kubectl apply -f KubeYaml/ingress-resource.yml;kubectl apply -f KubeYaml/nginx-ingress.yml;kubectl apply -f KubeYaml/node-port.yml;
