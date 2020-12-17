@@ -9,8 +9,14 @@ To setup this on local will need below
 
 Clone Git Repo
 
-git clone 
+git clone https://github.com/anuj1790/PayTM.git
+
+cd Assignment;
 
 To initialze application over kubenetes run below command.
 
-kubectl apply -f KubeYaml/ns-sa.yml;kubectl apply -f KubeYaml/ingress-secrets.yml;kubectl apply -f KubeYaml/ingress-role.yml;kubectl apply -f KubeYaml/ingress-config.yml;kubectl apply -f KubeYaml/ingress-class.yml;kubectl apply -f KubeYaml/ingress-resource.yml;kubectl apply -f KubeYaml/nginx-ingress.yml;kubectl apply -f KubeYaml/node-port.yml;
+kubectl apply -f KubeYaml/ns-sa.yml;kubectl apply -f KubeYaml/ingress-secrets.yml;kubectl apply -f KubeYaml/ingress-role.yml;kubectl apply -f KubeYaml/ingress-config.yml;kubectl apply -f KubeYaml/ingress-class.yml;kubectl apply -f KubeYaml/ingress-resource.yml;kubectl apply -f KubeYaml/nginx-ingress.yml;kubectl apply -f KubeYaml/node-port.yml; kubectl apply -f KubeYaml/Airport.yml;kubectl apply -f KubeYaml/Airport_Service.yml;kubectl apply -f KubeYaml/Countries.yml;kubectl apply -f KubeYaml/Countries_Service.yml
+
+once all kubeneters resources are configured you can access application over 
+http://localhost:30080/countries or http://localhost:30080/airports
+
